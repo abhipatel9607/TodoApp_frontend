@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	position: relative;
+}
+.main_container {
+	background-color: rgb(235, 235, 235);
+	width: 60vw;
+	margin: 0 auto;
+	padding: 1vw 3vw;
+	min-height: 100vh;
+}
+h1 {
+	margin: 5vh 0 2vh 0;
+	color: #333;
+}
+.create_todo input {
+	padding: 0.4vw;
+	border: 1px solid #333;
+	border-radius: 4px;
+}
+.create_todo input:focus {
+	outline: none;
+}
+.btn_submit {
+	padding: 0.3vw;
+	border: 2px solid #333;
+	border-radius: 4px;
+}
+li {
+	list-style-type: none;
+	margin-bottom: 3vh;
+}
+.title {
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 0.6vh;
+}
+.content {
+	font-weight: 500;
+	color: #333;
+}
+.btn {
+	margin-right: 0.6vw;
+	padding: 0.1vw 0.4vw 0.1vw 0.4vw;
+}
+
+/* EDIT BOX */
+.edit_container {
+	width: 35vw;
+	background-color: aquamarine;
+	padding: 2vw 3vw;
+	padding-left: 5vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h2 {
+	color: #333;
+	margin-bottom: 1.5vw;
+}
+.edit_container p {
+	margin-bottom: 0.8vw;
+}
+.edit_container input {
+	padding: 0.2vw;
+	border: 1px solid #333;
+	border-radius: 4px;
+}
+.edit_container input:focus {
+	outline: none;
+}
+.b {
+	cursor: pointer;
+}
+.button {
+	padding: 0.3vw;
+	border: 2px solid #333;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0.8vw 1vw 0 0;
+}

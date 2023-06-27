@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="main_container">
+			<h1>Create New Todo:</h1>
+			<div class="create_todo">
+				<form action="#">
+					<input id="create_titel" type="text" placeholder="Titel" required />
+					<input
+						id="create_description"
+						type="text"
+						placeholder="Description"
+						required
+					/>
+					<button class="b btn_submit" onclick="createTodo()">Submit</button>
+				</form>
+			</div>
+			<h1>My Todos:</h1>
+			<ul id="unorderedList">
+				<!-- <li>
+					<p class="title">Title: <span class="content show_title"></span></p>
+					<p class="title">
+						Description: <span class="content show_description"></span>
+					</p>
+					<p class="title">Status: <span class="content show_status"></span></p>
+					<button class="btn btn_edit">Edit</button>
+					<button class="btn btn_delete">Delete</button>
+				</li> -->
+			</ul>
+		</div>
+		<!-- =========================================================================== -->
+		<div class="edit_container">
+			<h2>Edit Todo:</h2>
+			<p class="title">Title: <input type="text" class="edit_title" /></p>
+			<p class="title">
+				Description: <input type="text" class="edit_description" />
+			</p>
+			<p class="title">Status: <input type="text" class="edit_status" /></p>
+			<button class="b button btn_done" onclick="saveEdit(unique_id)">
+				Done
+			</button>
+			<button class="b button btn_cancel" onclick="cancel()">Cancel</button>
+
+			<!-- <button class="btn btn_delete">Delete</button> -->
+		</div>
+		<!-- =========================================================================== -->
+		<script src="./script.js"></script>
+	</body>
+</html>
